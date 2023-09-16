@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <p>Hello Good Morning</p>
+    <p>Learning JavaScript and DOM Manipulation</p>
+    <p>Using getElementByTagName</p>
+
+    <script>
+        const paragraph = document.getElementsByTagName("p")
+
+        for (let i = 0; i < paragraph.length; i++) {
+            paragraph[i].style.color = "red"
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <div class="section">First Section</div>
+    <div class="section">Second Section</div>
+    <div class="section">Third Section</div>
+    <div class="section">Fourth Section</div>
+
+    <script>
+
+        const sections = document.getElementsByClassName("section")
+
+        for (let i = 0; i < sections.length; i++) {
+            if (i == 0) {
+                sections[i].style = 'color:blue; font-size: 20px'
+            } else if (i == 1) {
+                sections[i].style = 'color:black; font-size: 20px'
+            } else if(i == 2) {
+                sections[i].style = 'color:pink; font-size: 20px'
+            } else {
+                sections[i].style = 'color:red; font-size: 20px'
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
